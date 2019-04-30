@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', [
     'uses' => 'PostController@getIndex',
     'as' => 'blog.index'
@@ -51,3 +52,8 @@ Route::group(['prefix' => 'admin'], function() {
         'as' => 'admin.update'
     ]);
 });
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> 809a6c5e1a269397d0fd83211566ffaaa21c3b97
